@@ -122,8 +122,7 @@ foreach ($props as $prop) {
 }
 
 var_dump($props);
-/*;
-var_dump(array_slice($csv, 1));
-var_dump(convertRowsToProduct($a1, $a4));
-var_dump(convertRowsToProduct($a1, $a3));
-*/
+
+//var_dump(array_slice($csv, 1));
+//var_dump(convertRowsToProduct($a1, $a4));
+//var_dump(convertRowsToProduct($a1, $a3));

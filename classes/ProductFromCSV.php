@@ -49,10 +49,8 @@ class ProductFromCSV
     private $type_3;
     private $genre;
     private $stock;
-    public function __construct(
-        $id
-
-    ) {
+    public function __construct($id)
+    {
         //parent::__construct($id);
         $this->id = $id;
     }
