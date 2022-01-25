@@ -108,20 +108,21 @@ class Syncatal extends Module
     public function getContent()
     {
         $output = '';
+        $var = '';
 
-        // this part is executed only when the form is submitted
+        // this part is executed only when the form is submitted 
         if (Tools::isSubmit('submit' . $this->name)) {
             // retrieve the value set by the user
             $configValue = (string) Tools::getValue('SYNCATAL_CONFIG');
 
-        // check that the value is valid
-        if (empty($configValue) || !Validate::isGenericName($configValue)) {
-            // invalid value, show an error
-            $output = $this->displayError($this->l('Invalid Configuration value'));
-        } else {
-            // value is ok, update it and display a confirmation message
-            Configuration::updateValue('SYNCATAL_CONFIG', $configValue);
-            $output = $this->displayConfirmation($this->l('Settings updated'));
+            // check that the value is valid
+            if (empty($configValue) || !Validate::isGenericName($configValue)) {
+                // invalid value, show an error
+                $output = $this->displayError($this->l('Invalid Configuration value'));
+            } else {
+                // value is ok, update it and display a confirmation message
+                Configuration::updateValue('SYNCATAL_CONFIG', $configValue);
+                $output = $this->displayConfirmation($this->l('Settings updated'));
         }
     }
 
