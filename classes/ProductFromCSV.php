@@ -1,6 +1,6 @@
 <?php
 
-class ProductFromCSV extends ObjectModel
+class ProductFromCSV
 {
 
     private $id;
@@ -26,7 +26,8 @@ class ProductFromCSV extends ObjectModel
         $id
 
     ) {
-        parent::__construct($id, $id_lang, $id_shop);
+        //parent::__construct($id);
+        $this->id = $id;
     }
 
     /**
