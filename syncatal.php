@@ -112,7 +112,7 @@ class Syncatal extends Module
         $output = null;
 
         if (Tools::isSubmit('btnSubmit')) {
-            $pageName = strval(Tools::getValue('SYNCATAL_PAGENAME'));
+            String $pageName = Tools::getValue('SYNCATAL_PAGENAME');
 
             if (
                 !$pageName ||
