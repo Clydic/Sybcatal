@@ -26,8 +26,6 @@
 require_once '/syncatal/classes/CSV.php';
 class AdminCSVController extends ModuleAdminController
 {
-
-
     /**
      * Instanciation de la classe
      * Définition des paramètres basiques obligatoires
