@@ -33,7 +33,7 @@ class AdminCSVController extends ModuleAdminController
      */
     public function __construct()
     { 
-        //Gestion de l'affichage en mode bootstrap 
+        //Gestion de l'affichage en mode bootstrap
         $this->bootstrap = true;
         $this->ilename = CSV::getFilename();
 
