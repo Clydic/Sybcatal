@@ -123,11 +123,11 @@ class Syncatal extends Module
                 // value is ok, update it and display a confirmation message
                 Configuration::updateValue('SYNCATAL_CONFIG', $configValue);
                 $output = $this->displayConfirmation($this->l('Settings updated'));
+            }
         }
-    }
 
-    // display any message, then the form
-    return $output . $this->displayForm();
+        // display any message, then the form
+        return $output . $this->displayForm();
     }
 
     public function displayForm()
