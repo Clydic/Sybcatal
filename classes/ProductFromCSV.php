@@ -160,7 +160,7 @@ class ProductFromCSV
     /**
      * Get the value of ancien_prix
      */
-    public function getAncien_prix()
+    public function getAncienPrix()
     {
         return $this->ancien_prix;
     }
@@ -170,7 +170,7 @@ class ProductFromCSV
      *
      * @return  self
      */
-    public function setAncien_prix($ancien_prix)
+    public function setAncienPrix($ancien_prix)
     {
         $this->ancien_prix = $ancien_prix;
 
@@ -280,7 +280,7 @@ class ProductFromCSV
     /**
      * Get the value of image_link
      */
-    public function getImage_link()
+    public function getImageLink()
     {
         return $this->image_link;
     }
@@ -290,7 +290,7 @@ class ProductFromCSV
      *
      * @return  self
      */
-    public function setImage_link($image_link)
+    public function setImageLink($image_link)
     {
         $this->image_link = $image_link;
 
@@ -300,7 +300,7 @@ class ProductFromCSV
     /**
      * Get the value of image_2
      */
-    public function getImage_2()
+    public function getImage2()
     {
         return $this->image_2;
     }
@@ -310,7 +310,7 @@ class ProductFromCSV
      *
      * @return  self
      */
-    public function setImage_2($image_2)
+    public function setImage2($image_2)
     {
         $this->image_2 = $image_2;
 
@@ -320,7 +320,7 @@ class ProductFromCSV
     /**
      * Get the value of image_3
      */
-    public function getImage_3()
+    public function getImage3()
     {
         return $this->image_3;
     }
@@ -330,7 +330,7 @@ class ProductFromCSV
      *
      * @return  self
      */
-    public function setImage_3($image_3)
+    public function setImage3($image_3)
     {
         $this->image_3 = $image_3;
 
@@ -340,7 +340,7 @@ class ProductFromCSV
     /**
      * Get the value of type_1
      */
-    public function getType_1()
+    public function getType1()
     {
         return $this->type_1;
     }
@@ -350,7 +350,7 @@ class ProductFromCSV
      *
      * @return  self
      */
-    public function setType_1($type_1)
+    public function setType1($type_1)
     {
         $this->type_1 = $type_1;
 
@@ -360,7 +360,7 @@ class ProductFromCSV
     /**
      * Get the value of type_2
      */
-    public function getType_2()
+    public function getType2()
     {
         return $this->type_2;
     }
@@ -370,7 +370,7 @@ class ProductFromCSV
      *
      * @return  self
      */
-    public function setType_2($type_2)
+    public function setType2($type_2)
     {
         $this->type_2 = $type_2;
 
@@ -380,7 +380,7 @@ class ProductFromCSV
     /**
      * Get the value of type_3
      */
-    public function getType_3()
+    public function getType3()
     {
         return $this->type_3;
     }
@@ -390,7 +390,7 @@ class ProductFromCSV
      *
      * @return  self
      */
-    public function setType_3($type_3)
+    public function setType3($type_3)
     {
         $this->type_3 = $type_3;
 
