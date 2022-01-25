@@ -53,8 +53,9 @@ class Syncatal extends Module
     }
     public function install()
     {
-        return parent::install(); // && $this->_installTab();
+        return parent::install();
     }
+
 
 
     public function uninstall()
