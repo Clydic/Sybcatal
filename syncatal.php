@@ -107,12 +107,12 @@ class Syncatal extends Module
 
     public function getContent()
     {
-$output = '';
+        $output = '';
 
-    // this part is executed only when the form is submitted
-    if (Tools::isSubmit('submit' . $this->name)) {
-        // retrieve the value set by the user
-        $configValue = (string) Tools::getValue('SYNCATAL_CONFIG');
+        // this part is executed only when the form is submitted
+        if (Tools::isSubmit('submit' . $this->name)) {
+            // retrieve the value set by the user
+            $configValue = (string) Tools::getValue('SYNCATAL_CONFIG');
 
         // check that the value is valid
         if (empty($configValue) || !Validate::isGenericName($configValue)) {
