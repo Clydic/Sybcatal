@@ -61,12 +61,10 @@ class Syncatal extends Module
 
     public function uninstall()
     {
-        parent::uninstall(); /*&&
-            $this->_uninstallTab(); {
-            return false;
+        if (parent::uninstall()) /*&&*/ {
+            return true;
         }
-
-        return true;*/
+        return false;
     }
     protected function _installTab()
     {
