@@ -19,8 +19,6 @@
  */
 include("controllers/admin/CSVController.php");
 include("classes/CSV.php");
-/*A Simple file in order to test function  */
-
 $filename = "src/Sandro.csv";
 function displayFile($filename)
 {

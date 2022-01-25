@@ -24,7 +24,6 @@
  *  International Registered Trademark & Property of PrestaShop SA
  */
 require_once '/syncatal/classes/CSV.php';
-
 class AdminCSVController extends ModuleAdminController
 {
 
