@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Copyright since 2007 PrestaShop SA and Contributors
  * PrestaShop is an International Registered Trademark & Property of PrestaShop SA
@@ -58,7 +59,7 @@ class Syncatal extends Module
 
     public function uninstall()
     {
-        if (parent::uninstall()) /*&&*/ {
+        if (parent::uninstall()) {
             return true;
         }
         return false;
@@ -111,10 +112,7 @@ class Syncatal extends Module
         if (Tools::isSubmit('btnSubmit')) {
             $pageName = strval(Tools::getValue('SYNCATAL_PAGENAME'));
 
-            if (
-                !$pageName ||
-                empty($pageName)
-            ) {
+            if (!$pageName || empty($pageName)) {
                 $output .= $this->displayError($this->l('Invalid Configuration value'));
             } else {
                 Configuration::updateValue('SYNCATAL_PAGENAME', $pageName);
